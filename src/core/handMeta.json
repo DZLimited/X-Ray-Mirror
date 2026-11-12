@@ -1,0 +1,84 @@
+{
+ "palm": {
+  "a": 0,
+  "b": 9,
+  "restLength": 8.89203538440691
+ },
+ "segments": {
+  "thumb_mc": {
+   "a": 1,
+   "b": 2,
+   "restLength": 4.625325070936159
+  },
+  "thumb_prox": {
+   "a": 2,
+   "b": 3,
+   "restLength": 2.9022912207342824
+  },
+  "thumb_dist": {
+   "a": 3,
+   "b": 4,
+   "restLength": 2.356508468173926
+  },
+  "index_prox": {
+   "a": 5,
+   "b": 6,
+   "restLength": 3.8359041762657546
+  },
+  "index_mid": {
+   "a": 6,
+   "b": 7,
+   "restLength": 2.3657363280824577
+  },
+  "index_dist": {
+   "a": 7,
+   "b": 8,
+   "restLength": 1.8503227850958994
+  },
+  "middle_prox": {
+   "a": 9,
+   "b": 10,
+   "restLength": 4.337102921196876
+  },
+  "middle_mid": {
+   "a": 10,
+   "b": 11,
+   "restLength": 2.872252110926838
+  },
+  "middle_dist": {
+   "a": 11,
+   "b": 12,
+   "restLength": 1.7842333817467362
+  },
+  "ring_prox": {
+   "a": 13,
+   "b": 14,
+   "restLength": 4.1017739599917915
+  },
+  "ring_mid": {
+   "a": 14,
+   "b": 15,
+   "restLength": 2.85348489801444
+  },
+  "ring_dist": {
+   "a": 15,
+   "b": 16,
+   "restLength": 1.5427129418008059
+  },
+  "little_prox": {
+   "a": 17,
+   "b": 18,
+   "restLength": 3.3440924345558227
+  },
+  "little_mid": {
+   "a": 18,
+   "b": 19,
+   "restLength": 2.112833420699911
+  },
+  "little_dist": {
+   "a": 19,
+   "b": 20,
+   "restLength": 1.546950386758219
+  }
+ }
+}

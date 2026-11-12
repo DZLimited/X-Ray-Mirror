@@ -1,0 +1,259 @@
+:root {
+  --bg: #07090d;
+  --panel: #10141b;
+  --line: #222a36;
+  --text: #dfe6ef;
+  --muted: #8a96a6;
+  --accent: #8fc3e6;
+  --error: #ff8a8a;
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.layout {
+  width: min(100%, 1400px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.camera {
+  display: grid;
+  gap: 12px;
+}
+
+/* Overlay layers (canvas now, three.js later) sit exactly on the video.
+   Same intrinsic size + same object-fit = same crop, so points line up. */
+.layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 4px 14px;
+  font-size: 13px;
+}
+
+.panel section {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel section:last-child { border-bottom: 0; }
+
+.panel h3 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.panel .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  cursor: pointer;
+}
+
+.panel .check input { accent-color: var(--accent); }
+
+.panel .swatch {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.panel .slider-row { margin-top: 6px; }
+
+.panel .slider {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.panel .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.panel .row span { color: var(--muted); }
+.panel .row b { font-weight: 500; font-variant-numeric: tabular-nums; color: #9fe0b0; }
+.panel .row b.bad { color: var(--error); }
+
+.panel .bar {
+  height: 6px;
+  background: #1b222c;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 2px 0 8px;
+}
+
+.panel .bar > div {
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Selfie view. Only the display is flipped, not the pixel data. */
+.mirrored { transform: scaleX(-1); }
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 24px;
+  background: radial-gradient(circle at center, #121a24 0%, #000 70%);
+}
+
+.overlay h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: clamp(28px, 5vw, 48px);
+  letter-spacing: 0.04em;
+}
+
+.overlay p { margin: 0; color: var(--muted); }
+.overlay .error { color: var(--error); max-width: 480px; }
+
+.hud {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.hud span {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.hud .note { color: var(--muted); }
+
+.controls {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+button,
+select {
+  font: inherit;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover { border-color: var(--accent); }
+button:disabled { opacity: 0.45; cursor: wait; }
+
+button.primary {
+  background: var(--accent);
+  color: #06121c;
+  border-color: var(--accent);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.app { align-content: start; gap: 16px; }
+
+.credits {
+  width: min(100%, 1400px);
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.panel .buttons { display: flex; gap: 8px; margin-bottom: 6px; }
+.panel button.small { padding: 6px 10px; font-size: 12px; margin-top: 0; }
+.panel .hint { margin: 6px 0 2px; color: var(--muted); font-size: 11.5px; line-height: 1.45; }
+
+/* The panel got long: let it scroll on its own next to the video. */
+@media (min-width: 901px) {
+  .panel { max-height: calc(100vh - 32px); overflow-y: auto; position: sticky; top: 16px; }
+}
+
+.panel .segmented { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 6px; }
+.panel .segmented button { padding: 6px; font-size: 12.5px; }
+.panel .segmented button.on { background: var(--accent); color: #06121c; border-color: var(--accent); font-weight: 600; }
+.panel .small-select { padding: 4px 6px; font-size: 12px; max-width: 160px; }
+
+.panel .presets { display: grid; grid-template-columns: repeat(4, auto); gap: 4px; margin-bottom: 8px; }
+.panel .presets button { padding: 5px 6px; font-size: 11.5px; }
+.panel .grid2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8px; }
+.panel pre.data {
+  margin: 8px 0 0;
+  padding: 10px;
+  background: #0a0d12;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: 11px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace;
+  color: #cfd8e3;
+  white-space: pre-wrap;
+}
+.panel details.debug { padding: 10px 0; }
+.panel details.debug summary { cursor: pointer; color: var(--muted); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+
+/* Catches mouse/finger drags for the mirror (the other layers ignore the pointer). */
+.drag-layer { pointer-events: auto; cursor: grab; touch-action: none; }
+.drag-layer:active { cursor: grabbing; }

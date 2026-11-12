@@ -1,0 +1,392 @@
+[
+ {
+  "text": "Frontal bone",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   0.358,
+   10.826,
+   3.06
+  ],
+  "normal": [
+   0.053,
+   0.618,
+   0.784
+  ]
+ },
+ {
+  "text": "Parietal bone",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   3.203,
+   12.546,
+   -10.367
+  ],
+  "normal": [
+   0.432,
+   0.77,
+   -0.469
+  ]
+ },
+ {
+  "text": "Temporal bone",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   -6.309,
+   0.452,
+   -5.773
+  ],
+  "normal": [
+   -0.95,
+   -0.282,
+   -0.134
+  ]
+ },
+ {
+  "text": "Occipital bone",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   0.705,
+   5.116,
+   -14.759
+  ],
+  "normal": [
+   0.058,
+   -0.065,
+   -0.996
+  ]
+ },
+ {
+  "text": "Zygomatic bone (cheekbone)",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   5.018,
+   0.749,
+   2.283
+  ],
+  "normal": [
+   0.631,
+   -0.213,
+   0.745
+  ]
+ },
+ {
+  "text": "Maxilla (upper jaw)",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   -1.726,
+   -2.217,
+   4.555
+  ],
+  "normal": [
+   -0.224,
+   -0.459,
+   0.86
+  ]
+ },
+ {
+  "text": "Nasal bone",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   -0.022,
+   2.528,
+   5.576
+  ],
+  "normal": [
+   -0.005,
+   -0.031,
+   0.999
+  ]
+ },
+ {
+  "text": "Mandible (lower jaw)",
+  "layer": "skull",
+  "jaw": true,
+  "anchor": [
+   0.561,
+   -6.96,
+   3.962
+  ],
+  "normal": [
+   0.056,
+   -0.81,
+   0.583
+  ]
+ },
+ {
+  "text": "Teeth",
+  "layer": "skull",
+  "jaw": false,
+  "anchor": [
+   0.596,
+   -3.391,
+   5.43
+  ],
+  "normal": [
+   0.075,
+   -0.549,
+   0.833
+  ]
+ },
+ {
+  "text": "Frontal lobe",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   -1.557,
+   12.769,
+   -1.254
+  ],
+  "normal": [
+   -0.238,
+   0.919,
+   0.314
+  ]
+ },
+ {
+  "text": "Parietal lobe",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   2.919,
+   10.688,
+   -11.596
+  ],
+  "normal": [
+   0.357,
+   0.621,
+   -0.698
+  ]
+ },
+ {
+  "text": "Temporal lobe",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   -6.992,
+   5.533,
+   -6.731
+  ],
+  "normal": [
+   -0.907,
+   0.203,
+   -0.369
+  ]
+ },
+ {
+  "text": "Occipital lobe",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   2.145,
+   4.945,
+   -13.825
+  ],
+  "normal": [
+   0.228,
+   0.204,
+   -0.952
+  ]
+ },
+ {
+  "text": "Cerebellum",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   -0.814,
+   1.221,
+   -11.633
+  ],
+  "normal": [
+   -0.002,
+   -0.246,
+   -0.969
+  ]
+ },
+ {
+  "text": "Medulla oblongata",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   0.166,
+   -2.902,
+   -7.736
+  ],
+  "normal": [
+   0.029,
+   -0.829,
+   -0.559
+  ]
+ },
+ {
+  "text": "Pons (brainstem)",
+  "layer": "brain",
+  "jaw": false,
+  "anchor": [
+   -0.499,
+   1.02,
+   -6.481
+  ],
+  "normal": [
+   -0.09,
+   -0.607,
+   -0.789
+  ]
+ },
+ {
+  "text": "Eyeball",
+  "layer": "eyes",
+  "jaw": false,
+  "anchor": [
+   -3.351,
+   2.692,
+   3.977
+  ],
+  "normal": [
+   -0.425,
+   -0.05,
+   0.904
+  ]
+ },
+ {
+  "text": "Frontalis",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   2.8,
+   9.08,
+   4.091
+  ],
+  "normal": [
+   0.347,
+   0.512,
+   0.785
+  ]
+ },
+ {
+  "text": "Temporalis",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   -6.969,
+   6.763,
+   -1.659
+  ],
+  "normal": [
+   -0.943,
+   0.231,
+   0.24
+  ]
+ },
+ {
+  "text": "Masseter",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   4.867,
+   -2.466,
+   -0.841
+  ],
+  "normal": [
+   0.69,
+   -0.646,
+   0.326
+  ]
+ },
+ {
+  "text": "Orbicularis oculi",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   -3.405,
+   3.341,
+   4.134
+  ],
+  "normal": [
+   -0.389,
+   -0.036,
+   0.921
+  ]
+ },
+ {
+  "text": "Zygomaticus major",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   -3.698,
+   -1.802,
+   2.73
+  ],
+  "normal": [
+   -0.475,
+   -0.497,
+   0.726
+  ]
+ },
+ {
+  "text": "Orbicularis oris",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   0.029,
+   -4.866,
+   5.11
+  ],
+  "normal": [
+   0.015,
+   -0.603,
+   0.798
+  ]
+ },
+ {
+  "text": "Nasalis",
+  "layer": "muscles",
+  "jaw": false,
+  "anchor": [
+   -0.66,
+   1.803,
+   5.992
+  ],
+  "normal": [
+   -0.091,
+   -0.11,
+   0.99
+  ]
+ },
+ {
+  "text": "Depressor anguli oris",
+  "layer": "muscles",
+  "jaw": true,
+  "anchor": [
+   2.502,
+   -6.233,
+   2.794
+  ],
+  "normal": [
+   0.257,
+   -0.763,
+   0.593
+  ]
+ },
+ {
+  "text": "Mentalis",
+  "layer": "muscles",
+  "jaw": true,
+  "anchor": [
+   -0.786,
+   -6.447,
+   4.228
+  ],
+  "normal": [
+   -0.06,
+   -0.747,
+   0.662
+  ]
+ }
+]

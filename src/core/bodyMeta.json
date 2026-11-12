@@ -1,0 +1,166 @@
+{
+ "torso": {
+  "restWidth": 30.750420901915334,
+  "restLength": 50.139405883826115
+ },
+ "segments": {
+  "humerusL": {
+   "a": "shoulderL",
+   "b": "elbowL",
+   "restLength": 28.46330090902106
+  },
+  "forearmL": {
+   "a": "elbowL",
+   "b": "wristL",
+   "restLength": 23.590099061878373
+  },
+  "humerusR": {
+   "a": "shoulderR",
+   "b": "elbowR",
+   "restLength": 28.410802656442794
+  },
+  "forearmR": {
+   "a": "elbowR",
+   "b": "wristR",
+   "restLength": 23.572597894489764
+  }
+ },
+ "neck": [
+  {
+   "key": "neck0",
+   "name": "atlas",
+   "blend": 0.0
+  },
+  {
+   "key": "neck1",
+   "name": "axis",
+   "blend": 0.16666666666666666
+  },
+  {
+   "key": "neck2",
+   "name": "third cervical vertebra",
+   "blend": 0.3333333333333333
+  },
+  {
+   "key": "neck3",
+   "name": "fourth cervical vertebra",
+   "blend": 0.5
+  },
+  {
+   "key": "neck4",
+   "name": "fifth cervical vertebra",
+   "blend": 0.6666666666666666
+  },
+  {
+   "key": "neck5",
+   "name": "sixth cervical vertebra",
+   "blend": 0.8333333333333334
+  },
+  {
+   "key": "neck6",
+   "name": "seventh cervical vertebra",
+   "blend": 1.0
+  }
+ ],
+ "headToTorso": [
+  0.945317909926029,
+  -0.0011212336343569512,
+  -0.0032971469049254917,
+  0.0,
+  0.001301230810042879,
+  0.9438870083955495,
+  0.0520931986920548,
+  0.0,
+  0.0032303468783505965,
+  -0.052097383684097893,
+  0.943882146584947,
+  0.0,
+  0.07384086354275794,
+  17.071309448896386,
+  6.894655528905508,
+  1.0
+ ],
+ "labels": [
+  {
+   "text": "Clavicle",
+   "group": "torso",
+   "point": [
+    14.674,
+    3.485,
+    -0.436
+   ]
+  },
+  {
+   "text": "Scapula",
+   "group": "torso",
+   "point": [
+    -16.709,
+    2.781,
+    -1.803
+   ]
+  },
+  {
+   "text": "Sternum",
+   "group": "torso",
+   "point": [
+    0.044,
+    0.152,
+    8.504
+   ]
+  },
+  {
+   "text": "Ribs",
+   "group": "torso",
+   "point": [
+    -13.441,
+    -14.663,
+    1.26
+   ]
+  },
+  {
+   "text": "Thoracic vertebrae",
+   "group": "torso",
+   "point": [
+    -0.081,
+    1.112,
+    -2.931
+   ]
+  },
+  {
+   "text": "Humerus",
+   "group": "humerusL",
+   "point": [
+    -3.305,
+    27.764,
+    -0.828
+   ]
+  },
+  {
+   "text": "Radius",
+   "group": "forearmL",
+   "point": [
+    -2.428,
+    24.714,
+    0.129
+   ]
+  },
+  {
+   "text": "Ulna",
+   "group": "forearmR",
+   "point": [
+    -0.571,
+    23.549,
+    0.06
+   ]
+  },
+  {
+   "text": "Cervical vertebrae",
+   "group": "neck3",
+   "head": [
+    -0.047,
+    -7.12,
+    -7.637
+   ]
+  }
+ ]
+}
